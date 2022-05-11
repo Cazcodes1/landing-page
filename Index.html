@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pics by Caroline</title>
     <style>
+      
       body {
         background: rgb(245, 223, 229);
+        max-width: max-content;
       }
+     
+.main {display: block;
+  justify-content: center;
+ 
+}
  .logo {display:flex;
   margin: 0 auto;
         justify-content: center;
-        width: 200px
+        width: 280px
         ;
         }
 
       hr {
         background-color: hsl(333, 63%, 67%);
         height: 1.5px;
-        margin-inline-start: 125px;
-        margin-inline-end: 125px;
+        margin-inline-start: 110px;
+        margin-inline-end: 110px;
       }
 
      
@@ -40,22 +47,18 @@
         font-weight: lighter;
       }
 
-      .container main {display: flex;
-        width: 288px;
-        color: hsl(333, 38%, 64%);
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin: 0 auto;
-      }
+     
 
       .aboutMe {
         display:block;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        width: 500px;
+        width: 610px;
         max-width: 80%;
      margin:0 auto;
      text-align: justify;
+     line-height: 22pt;
+    
               
       }
       .instagram {
@@ -70,26 +73,28 @@
         text-decoration: none;
         font-size: 20px;
       }
+      
 .container {display: flex;
-max-width: 500px;
-width:450px;
-margin: 0 auto;
-justify-content: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
 }
       .coloumn {
         flex: 30%;
       }
       img {
-        width: 30%;
-        padding: 20px;
-        border-radius: 50px;
+        width: 17%;
+        padding: 7px;
+        border-radius: 20px;
       }
 
       button {
         display: block;
         margin: 40px auto;
         background: #c57f9f;
-
         color: beige;
         font-size: 18px;
         padding: 15px 20px;
@@ -118,7 +123,8 @@ justify-content: center;
     </style>
   </head>
   <body>
-    <div class="container logo">
+    <div container class="main">
+    <div class="logo">
       <img
         class="logo"
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/731/original/Untitled_Artwork.png?1645448228"
@@ -126,8 +132,7 @@ justify-content: center;
         width= "20px"
       />
       </div>
-      <div class="container main"></div>
-      <hr />
+     <hr />
       <br />
       <br />
       <h1><b>Artist and Illustrator</b></h1>
@@ -192,5 +197,7 @@ justify-content: center;
       let contactButton = document.querySelector("button");
       contactButton.addEventListener("click", joinMyMailingList);
     </script>
+    </div>
+    </body>
   </body>
 </html>
