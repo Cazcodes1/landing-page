@@ -9,20 +9,21 @@
       body {
         background: rgb(245, 223, 229);
       }
+ .logo {display:flex;
+  margin: 0 auto;
+        justify-content: center;
+        width: 200px
+        ;
+        }
 
-      .logo {
-        display: block;
-        margin: 0 auto;
-        max-width: 15%;
-        border-radius: 5px;
-        padding: 0px 0px 0px 0px;
-      }
       hr {
         background-color: hsl(333, 63%, 67%);
         height: 1.5px;
-        margin-inline-start: 200px;
-        margin-inline-end: 200px;
+        margin-inline-start: 125px;
+        margin-inline-end: 125px;
       }
+
+     
       h1 {
         text-align: center;
         color: #96488a;
@@ -39,16 +40,23 @@
         font-weight: lighter;
       }
 
-      .aboutMe {
-        display: block;
-        text-align: justify;
-        font-family: Arial;
-        font-size: 18px;
+      .container main {display: flex;
+        width: 288px;
         color: hsl(333, 38%, 64%);
         padding-top: 20px;
         padding-bottom: 10px;
-        margin-inline-start: 200px;
-        margin-inline-end: 200px;
+        margin: 0 auto;
+      }
+
+      .aboutMe {
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        width: 500px;
+        max-width: 80%;
+     margin:0 auto;
+     text-align: justify;
+              
       }
       .instagram {
         text-align: center;
@@ -62,7 +70,12 @@
         text-decoration: none;
         font-size: 20px;
       }
-
+.container {display: flex;
+max-width: 500px;
+width:450px;
+margin: 0 auto;
+justify-content: center;
+}
       .coloumn {
         flex: 30%;
       }
@@ -70,16 +83,6 @@
         width: 30%;
         padding: 20px;
         border-radius: 50px;
-      }
-      .container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        background-color: none;
-        margin: auto;
-        padding: 10px, 50px, 10px, 50px;
-        width: 1035px;
-        border-radius: 40px;
       }
 
       button {
@@ -115,39 +118,46 @@
     </style>
   </head>
   <body>
-    <img
-      class="logo"
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/731/original/Untitled_Artwork.png?1645448228"
-      alt="width 30"
-    />
-    <hr />
-    <br />
-    <br />
-    <h1><b>Artist and Illustrator</b></h1>
+    <div class="container logo">
+      <img
+        class="logo"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/731/original/Untitled_Artwork.png?1645448228"
+        alt="my logo"
+        width= "20px"
+      />
+      </div>
+      <div class="container main"></div>
+      <hr />
+      <br />
+      <br />
+      <h1><b>Artist and Illustrator</b></h1>
 
-    <h2><em>About Me</em></h2>
-    <p class="aboutMe">
-      Hi, I’m Caroline. Thanks for stopping by. I’m a 40 something, mixed-media
-      artist, self taught, from Bonnie Scotland. I have a love for pencil,
-      charcoal and watercolour art and enjoy a bit of a mash up of all these
-      mediums. I also like to tinker with a little bit of tech to edit my work,
-      particularly pro-create and photoshop. <br /><br />I have an obsession
-      with drawing people and flowers and take influence and inspiration from
-      many artists, past and present, including Jack Vettriano, Edward Hopper,
-      Ron Lawson, Polina Bright and the wonderful Matylda Konecka.
-      <br /><br />My passion for art has developed through the years and was the
-      one thing I really enjoyed at school. I also had a dad who was very
-      creative, with lots of hobbies including photography, printmaking,
-      jewellery design, to name but a few. I’d like to share some of my work
-      with you, Enjoy!
-    </p>
+      <h2><em>About Me</em></h2>
 
-    <p class="instagram">
-      <a href="https://www.instagram.com/pics.bycaroline/?hl=en" target="_blank"
-        >👉🏼 <em> Follow me on Instagram </em> 👈🏼
-      </a>
-    </p>
+      <p class="aboutMe">
+        Hi, I’m Caroline. Thanks for stopping by. I’m a 40 something,
+        mixed-media artist, self taught, from Bonnie Scotland. I have a love for
+        pencil, charcoal and watercolour art and enjoy a bit of a mash up of all
+        these mediums. I also like to tinker with a little bit of tech to edit
+        my work, particularly pro-create and photoshop. <br /><br />I have an
+        obsession with drawing people and flowers and take influence and
+        inspiration from many artists, past and present, including Jack
+        Vettriano, Edward Hopper, Ron Lawson, Polina Bright and the wonderful
+        Matylda Konecka. <br /><br />My passion for art has developed through
+        the years and was the one thing I really enjoyed at school. I also had a
+        dad who was very creative, with lots of hobbies including photography,
+        printmaking, jewellery design, to name but a few. I’d like to share some
+        of my work with you, Enjoy!
+      </p>
 
+      <p class="instagram">
+        <a
+          href="https://www.instagram.com/pics.bycaroline/?hl=en"
+          target="_blank"
+          >👉🏼 <em> Follow me on Instagram </em> 👈🏼
+        </a>
+      </p>
+    </div>
     <div class="container">
       <img
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/741/original/Untitled_Artwork.jpg?1645457780"
