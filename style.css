@@ -38,11 +38,10 @@ h2 {
 }
 
 .aboutMe {
-  display: block;
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  width: 610px;
-  max-width: 80%;
+  max-width: 730px;
   margin: 0 auto;
   text-align: justify;
   line-height: 22pt;
